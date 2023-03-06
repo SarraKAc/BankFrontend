@@ -1,0 +1,75 @@
+{
+  "client": [
+    {
+      "Prenom": "Sana",
+      "Nom": "Karray",
+      "email": "Sana@gmail.com",
+      "dob": "2001-04-29T23:00:00.000Z",
+      "IndicatifPays": 216,
+      "NumTel": 55341245,
+      "CIN": 14779955,
+      "solde": 15012,
+      "gender": "",
+      "agence": "AGENCE SFAX JEDIDA (B7)               ",
+      "Identifiant": "azerty15",
+      "MDP": "15azerty",
+      "id": 1
+    },
+    {
+      "Prenom": "Ameni",
+      "Nom": "Mefteh",
+      "dob": "2005-08-11T23:00:00.000Z",
+      "email": "test@gmail.com",
+      "IndicatifPays": 987,
+      "NumTel": 554413,
+      "CIN": 112255,
+      "agence": "AGENCE KORBA (05)                     ",
+      "Identifiant": "zaff56465zfd",
+      "MDP": "sevfzf56465",
+      "solde": 52450,
+      "id": 2
+    },
+    {
+      "Prenom": "Ameni",
+      "Nom": "Mefteh",
+      "dob": "2005-08-11T23:00:00.000Z",
+      "email": "test@gmail.com",
+      "IndicatifPays": 987,
+      "NumTel": 554413,
+      "CIN": 112255,
+      "agence": "AGENCE KORBA (05)                     ",
+      "Identifiant": "zaff56465zfd",
+      "MDP": "sevfzf56465",
+      "solde": 52450,
+      "id": 2
+    },
+    {
+      "Prenom": "Ameni",
+      "Nom": "Mefteh",
+      "dob": "2005-08-11T23:00:00.000Z",
+      "email": "test@gmail.com",
+      "IndicatifPays": 987,
+      "NumTel": 554413,
+      "CIN": 112255,
+      "agence": "AGENCE KORBA (05)                     ",
+      "Identifiant": "zaff56465zfd",
+      "MDP": "sevfzf56465",
+      "solde": 52450,
+      "id": 2
+    },
+    {
+      "Prenom": "Ameni",
+      "Nom": "Mefteh",
+      "dob": "2005-08-11T23:00:00.000Z",
+      "email": "test@gmail.com",
+      "IndicatifPays": 987,
+      "NumTel": 554413,
+      "CIN": 112255,
+      "agence": "AGENCE KORBA (05)                     ",
+      "Identifiant": "zaff56465zfd",
+      "MDP": "sevfzf56465",
+      "solde": 52450,
+      "id": 2
+    }
+  ]
+}

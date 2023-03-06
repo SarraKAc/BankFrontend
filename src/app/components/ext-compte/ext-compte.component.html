@@ -1,0 +1,45 @@
+<br> <div style="margin-left: 100px;">
+    <table>
+        <tr>
+            <td>
+        <tr>
+            <img src="../../assets/img/sc.jpg" alt="">
+        </tr>
+        <tr>   <br> <button type="submit" style=" width: 130px; background-color: #01223e; color: white; margin-left: 60px;" class="btn btn-primary" routerLink="/Aide">Aide ?</button>
+        </tr>
+        <br>
+        </td>
+        <td style="width: 30px;"></td>
+        <td>
+            <h3 style="margin-left: 50px; color: rgb(214, 139, 0);">Extrait de compte <a
+        style="text-decoration-line: underline; margin-left: 350px; color: rgb(0, 15, 128);" >Supprimer critères
+        saisis</a> </h3>
+<form>
+    <fieldset class="row mb-3" style="margin-left: 280px;">
+        <legend class="col-form-label col-sm-2 pt-0">Compte:</legend>
+        <div class="col-sm-10" *ngFor="let c of comptes;">
+
+            <label class="form-check-label">
+<select style="width: 210px;" class="form-select" name="" id="" >
+    <option value="abc123">k,lk</option>
+    <option value="cde456">cde456</option>
+  </select>      
+</label>
+
+        </div>
+    </fieldset>
+
+    <fieldset class="row mb-3" style="margin-left: 280px;">
+        <legend class="col-form-label col-sm-2 pt-0">Date début:</legend>
+        <div class="col-sm-10">
+
+            <label class="form-check-label">
+                <input style="width: 210px;" type="date" class="form-control" placeholder="">
+            </label>
+
+        </div>
+    </fieldset>
+<br>
+    <button type="submit" style="background-color: #01223e; color: white; margin-left: 750px;" class="btn btn-primary">Afficher</button>
+</form> </td></tr></table></div>
+<br>

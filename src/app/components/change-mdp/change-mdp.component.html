@@ -1,0 +1,99 @@
+<br>
+<div style="margin-left: 100px;">
+    <table>
+        <tr>
+            <td>
+        <tr>
+            <img src="../../assets/img/sc.jpg" alt="">
+        </tr>
+        <tr> <br> <button type="submit"
+                style=" width: 130px; background-color: #01223e; color: white; margin-left: 60px;"
+                class="btn btn-primary" routerLink="/Aide">Aide ?</button>
+        </tr>
+        </td>
+        <td style="width: 30px;"></td>
+        <td>
+            <h3 style="margin-left: 350px; color: rgb(214, 139, 0);">Changement de mot de passe</h3>
+            <br><br>
+            <form class="form" (ngSubmit)="onSubmit()">
+
+                <fieldset class="row mb-3" style="margin-left: 350px;">
+                    <legend class="col-form-label col-sm-2 pt-0">Identifiant:</legend>
+                    <div class="col-sm-10">
+                        <label class="form-check-label">IU1235304234 </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3" style="margin-left: 350px;">
+                    <legend class="col-form-label col-sm-2 pt-0">Votre ancien mot de passe</legend>
+                    <div class="col-sm-10">
+                        <label class="form-check-label">
+                            <input style="width: 210px;" type="password" class="form-control" placeholder="">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3" style="margin-left: 350px;">
+                    <legend class="col-form-label col-sm-2 pt-0" for="newPassword">Nouveau mot de passe</legend>
+                    <div class="col-sm-10">
+                        <label class="form-check-label">
+                            <input style="width: 210px;" id="newPassword" type="password" class="form-control" formControlName="newPassword" #pw />
+                        </label>
+                        <div *ngIf="
+                  newPassword.invalid &&
+                  (newPassword.dirty || newPassword.touched)
+                " class="form-text text-danger">
+                            <div *ngIf="newPassword.errors?.['required']">
+                                Field is required
+                            </div>
+                            <div *ngIf="newPassword.errors?.['pattern']">
+                                Password must contain at least one number, one uppercase and a
+                                lowercase letter and at least 8 characters<br />Password cannot
+                                contain whitespace
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3" style="margin-left: 350px;">
+                    <legend class="col-form-label col-sm-2 pt-0" for="confirmPassword">Confirmer le nouveau mot de passe</legend>
+                    <div class="col-sm-10">
+                        <label class="form-check-label">
+                             <input style="width: 210px;" id="confirmPassword" type="password" class="form-control" [ngClass]="confirmPasswordClass" formControlName="confirmPassword" #cpw >
+                        </label>
+                        <div *ngIf="
+                  confirmPassword.invalid &&
+                  (confirmPassword.dirty || confirmPassword.touched)
+                " class="form-text text-danger">
+                            <div *ngIf="confirmPassword.errors?.['required']">
+                                Field is required
+                            </div>
+                            <div *ngIf="confirmPassword.errors?.['pattern']">
+                                Password must contain at least one number, one uppercase and a
+                                lowercase letter and at least 8 characters<br />Password cannot
+                                contain whitespace
+                            </div>
+                            <div *ngIf="confirmPassword.errors?.['confirmedValidator']">
+                                Passwords did not match
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div
+                    style="background-color: rgb(233, 233, 233); margin-left: 150px; margin-right: 450px; border-radius: 10px;">
+                    <p> <i style="margin-right: 10px;" class="fa fa-info-circle" aria-hidden="true"></i>Avertissement:
+                        les mots de passe doivent contenir au moins 8 caractères composés de lettres majuscules, de
+                        lettres miniscules et de chiffres</p>
+                </div>
+
+                <br>
+                <button type="submit" style="background-color: #01223e; color: white; margin-left: 1020px;"
+                    class="btn btn-primary"><i class="fa fa-check" aria-hidden="true"></i>
+                </button>
+            </form>
+        </td>
+        </tr>
+    </table>
+</div>
+<br>

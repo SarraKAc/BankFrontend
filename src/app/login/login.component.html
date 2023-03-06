@@ -1,0 +1,107 @@
+<!-- <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Login Page</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+      <mat-form-field>
+        <input matInput placeholder="Username" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" />
+      </mat-form-field>
+      <button mat-raised-button type="submit" routerLink="/home">Login</button>
+    </form>
+  </mat-card>
+</div> -->
+
+<br />
+<div style="margin-left: 50px">
+  <table>
+    <tr>
+      <td style="width: 800px;">
+        <h2 style="margin-left: 350px; color: rgb(0, 0, 184)"><strong>Se connecter à BIATNET</strong> </h2>
+        <br/>
+        <!-- <form class="form" (ngSubmit)="onSubmit()"> -->
+        <form class="form">
+          <div class="row mb-3" style="margin-left: 350px">
+            <legend class="col-form-label col-sm-2 pt-0" style="width: 112px; margin-top: 17px;">Identifiant</legend>
+            <mat-form-field appearance="outline" style="width: 235px; margin-left: 20px;">
+              <mat-label>Identifiant</mat-label>
+              <input matInput placeholder="" />
+            </mat-form-field>
+          </div>
+
+          <div class="row mb-3" style="margin-left: 350px">
+            <legend class="col-form-label col-sm-2 pt-0" style="width: 112px; margin-top: 17px;">
+              Mot de passe
+            </legend>
+            <mat-form-field appearance="outline" style="width: 235px; margin-left: 20px;">
+              <mat-label>Mot de passe</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'" />
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>{{
+                  hide ? "visibility_off" : "visibility"
+                  }}</mat-icon>
+              </button>
+              
+            </mat-form-field>
+
+          <div class="example-button-row">
+            <button style="width: 150px;
+            background-color: rgb(233, 233, 233);
+            color: black;
+            border-color: rgb(233, 233, 233);
+            border-radius: 7px;
+            margin-left: 195px;" mat-button>Se connecter</button>
+          </div>
+
+          </div>
+
+     
+          <br />
+          <div style="margin-left: 350px; border-radius: 10px">
+            <p>
+              <strong>Identifiant</strong> et<strong> mot de passe</strong> sont
+              sensibles à la casse.
+            </p>
+          </div>
+          <br />
+        </form>
+      </td>
+      <td style="width: 100px;"></td>
+      <td style="width: 600px;">
+        <tr>
+        <button type="submit" style="
+            width: 185px;
+            background-color: #01223e;
+            color: white;
+            margin-left: 60px;
+            border-radius: 7px;
+          " mat-button routerLink="/Aide">
+          Mot de passe Oublié ?
+        </button>
+        <button type="submit" style="
+            width: 185px;
+            background-color: #01223e;
+            color: white;
+            margin-left: 60px;
+            border-radius: 7px;
+          " mat-button routerLink="/Aide">
+          Aide ?
+        </button></tr>
+        <tr><br>
+          <p>
+            Pour tout besoin d'informations ou d'assistance, nous vous invitons
+            à consulter la rebrique <a style="color: rgb(0, 15, 128); text-decoration-line: underline" routerLink="/Aide">Aide</a> ou à contacter votre Agence.
+          </p>
+        </tr>
+        <tr>
+        <br />
+        <a style="color: rgb(0, 15, 128); text-decoration-line: underline" routerLink="/SituationCompte">Accès à
+          MultiVir.Net</a>
+        </tr>
+      </td>
+    </tr>
+  </table>
+</div>
